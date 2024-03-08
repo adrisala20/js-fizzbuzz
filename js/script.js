@@ -34,7 +34,10 @@ for(let i = 0 ; i <= numBox ; i++){
     if (i % 3 === 0 &&  i % 5 === 0){
         number = 'fizzBuzz';
         console.log(number);
-    } 
+    } else if (i % 3 === 0){
+        number = 'fizz';
+        console.log (number);
+    }
 
     // let number = (i % 3 === 0) && (i % 5 === 0)? 'fizzbuzz' : number;
     // console.log(number);
