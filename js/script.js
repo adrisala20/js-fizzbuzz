@@ -30,6 +30,13 @@ let tempHtml='';
 /*     aggiungo la condizione con For per i numeri che sono sia multipli di 3 che di 5, stampi “FizzBuzz”   */
 
 for(let i = 0 ; i <= numBox ; i++){
-    let number = (i % 3 === 0) && (i % 5 === 0)? 'fizzbuzz' : number;
-    console.log(number);
+    let number;
+    if (i % 3 === 0 &&  i % 5 === 0){
+        number = 'fizzBuzz';
+        console.log(number);
+    } 
+
+    // let number = (i % 3 === 0) && (i % 5 === 0)? 'fizzbuzz' : number;
+    // console.log(number);
 }
+tempHtml
