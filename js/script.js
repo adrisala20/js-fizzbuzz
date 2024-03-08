@@ -14,7 +14,7 @@ const boxWrapper = document.createElement('div');
         // console.log(boxWrapper);
 
 //aggiungo gli attributi (className)
-boxWrapper.className = ('d-flex justify-content-center align-content-center gap-2');
+boxWrapper.className = ('d-flex justify-content-center align-content-center gap-2 flex-wrap text-white');
         // console.log(boxWrapper)
 
 // aggiungo l'id e il box al div
@@ -31,20 +31,24 @@ let tempHtml='';
 
 for(let number = 1 ; number <= numBox ; number++){
     let result;
+    let color;
     if (number % 3 === 0 &&  number % 5 === 0){
         result = 'fizzBuzz';
+        color = 'fizz-buzz';
         console.log(result);
     } else if (number % 3 === 0){
         result = 'fizz';
+        color ='fizz';
         console.log (result);
     } else if ( number % 5 === 0){
         result = 'buzz';
+        color = 'buzz';
         console.log(result);
     } else {
         result= number;
         console.log(result);
     } 
-    tempHtml += `<div class="box"> ${number}</div>`;
+    tempHtml += `<div class="box color"> ${result}</div>`;
     console.log(tempHtml)
     }
     

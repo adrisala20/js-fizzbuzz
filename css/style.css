@@ -5,3 +5,12 @@
     margin: 5px;
     border: 1px solid black;  
 }
+.fizz {
+    background-color: rgb(13, 141, 98);
+}
+.buzz {
+    background-color: rgb(200, 129, 23);
+}
+.fizz-buzz {
+    background-color: rgb(228, 228, 118);
+}
