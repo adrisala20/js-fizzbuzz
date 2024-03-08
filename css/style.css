@@ -3,7 +3,10 @@
     height: 100px;
     background-color: rgb(13, 13, 163);
     margin: 10px;
-    border: 1px solid black;  
+    border: 1px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .fizz {
     background-color: rgb(13, 141, 98);
