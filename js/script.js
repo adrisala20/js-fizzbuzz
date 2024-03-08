@@ -14,7 +14,7 @@ const boxWrapper = document.createElement('div');
         // console.log(boxWrapper);
 
 //aggiungo gli attributi (className)
-boxWrapper.className = ('d-flex justify-content-center align-content-center gap-2 flex-wrap text-white');
+boxWrapper.className = ('d-flex justify-content-center align-items-center gap-2 flex-wrap text-white');
         // console.log(boxWrapper)
 
 // aggiungo l'id e il box al div
@@ -48,7 +48,7 @@ for(let number = 1 ; number <= numBox ; number++){
         result= number;
         console.log(result);
     } 
-    tempHtml += `<div class="box color"> ${result}</div>`;
+    tempHtml += `<div class="box ${color}"> ${result}</div>`;
     console.log(tempHtml)
     }
     
