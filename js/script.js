@@ -27,22 +27,30 @@ let tempHtml='';
 //console-console.log(numBox);
 
 
-/*     aggiungo la condizione con For per i numeri che sono sia multipli di 3 che di 5, stampi “FizzBuzz”   */
+/*     aggiungo le condizioni con For  */
 
-for(let i = 0 ; i <= numBox ; i++){
-    let number;
-    if (i % 3 === 0 &&  i % 5 === 0){
-        number = 'fizzBuzz';
-        console.log(number);
-    } else if (i % 3 === 0){
-        number = 'fizz';
-        console.log (number);
-    } else if ( i % 5 === 0){
-        number = 'buzz';
-        console.log(number);
+for(let number = 1 ; number <= numBox ; number++){
+    let result;
+    if (number % 3 === 0 &&  number % 5 === 0){
+        result = 'fizzBuzz';
+        console.log(result);
+    } else if (number % 3 === 0){
+        result = 'fizz';
+        console.log (result);
+    } else if ( number % 5 === 0){
+        result = 'buzz';
+        console.log(result);
+    } else {
+        result= number;
+        console.log(result);
+    } 
+    tempHtml += `<div class="box"> ${number}</div>`;
+    console.log(tempHtml)
     }
+    
+boxWrapper.innerHTML = tempHtml;
 
-    // let number = (i % 3 === 0) && (i % 5 === 0)? 'fizzbuzz' : number;
-    // console.log(number);
-}
-tempHtml
+// stampo nella pagina
+const container = document.querySelector('.container');
+container.append (boxWrapper);
+
